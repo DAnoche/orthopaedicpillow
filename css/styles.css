@@ -965,6 +965,9 @@ footer {
 
 /* Media Queries */
 @media (min-width: 600px) {
+  .header {
+    font-size: 20px;
+  }
   .wrapper {
     width: 100%;
     display: flex;
@@ -1014,6 +1017,9 @@ footer {
 }
 
 @media (min-width: 992px) {
+  .header {
+    font-size: 25px;
+  }
   .left {
     display: flex;
     flex-direction: row-reverse;
