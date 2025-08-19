@@ -623,7 +623,8 @@ body {
 }
 
 .newsletter-form button:hover {
-  background-color: var(--blackCLR);
+  background-color: var(--clr1);
+  color: var(--whiteCLR);
 }
 
 /* Review Section */
