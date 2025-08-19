@@ -61,7 +61,9 @@
                   <h5>$99.99 <span class="orig-price">$166.65</span></h5>
                   <div class="discount">40% OFF</div>
                 </div>
-                <button class="main-btn order-btn">ORDER NOW</button>
+                <button class="main-btn order-btn" onclick="checkout()">
+                  ORDER NOW
+                </button>
 
                 <div class="payment-partners">
                   <p>Secure and trusted checkout with</p>
@@ -278,6 +280,148 @@
       </div>
     </div>
 
+    <!-- Reviews -->
+    <div class="reviews-section" id="reviews">
+      <div class="container">
+        <div class="reviews-layout">
+          <!-- Review Summary -->
+          <div class="review-summary">
+            <h2>Customer Reviews</h2>
+
+            <div class="average-rating">
+              <span class="rating-text"
+                >4.8 / 5 <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i> (1031 reviews)</span
+              >
+            </div>
+
+            <div class="rating-bars">
+              <div class="rating-bar">
+                <span class="stars">5 star</span>
+                <div class="bar-container">
+                  <div class="bar" style="width: 86%"></div>
+                </div>
+                <span class="percent">86%</span>
+              </div>
+              <div class="rating-bar">
+                <span class="stars">4 star</span>
+                <div class="bar-container">
+                  <div class="bar" style="width: 10%"></div>
+                </div>
+                <span class="percent">10%</span>
+              </div>
+              <div class="rating-bar">
+                <span class="stars">3 star</span>
+                <div class="bar-container">
+                  <div class="bar" style="width: 4%"></div>
+                </div>
+                <span class="percent">4%</span>
+              </div>
+              <div class="rating-bar">
+                <span class="stars">2 star</span>
+                <div class="bar-container">
+                  <div class="bar" style="width: 0%"></div>
+                </div>
+                <span class="percent">0%</span>
+              </div>
+              <div class="rating-bar">
+                <span class="stars">1 star</span>
+                <div class="bar-container">
+                  <div class="bar" style="width: 0%"></div>
+                </div>
+                <span class="percent">0%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Reviews List -->
+          <div class="reviews-list">
+            <div class="review">
+              <div class="review-header">
+                <h3>Still Can’t Believe the Difference!</h3>
+                <div class="star-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+
+              <div class="review-meta">
+                <span class="reviewer">Hannah R.</span>
+                <span class="verified-badge">Verified Purchase</span>
+                <span class="separator">•</span>
+                <span class="date">May 10, 2023</span>
+              </div>
+
+              <p class="review-content">
+                I’ve tried so many pillows, but this one is on another level.
+                After just a few nights, my neck pain is gone and I’m finally
+                waking up rested. Worth every penny!
+              </p>
+            </div>
+
+            <div class="review">
+              <div class="review-header">
+                <h3>Best Sleep I’ve Had in Years</h3>
+                <div class="star-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                </div>
+              </div>
+
+              <div class="review-meta">
+                <span class="reviewer">Leon P.</span>
+                <span class="verified-badge">Verified Purchase</span>
+                <span class="separator">•</span>
+                <span class="date">April 22, 2023</span>
+              </div>
+
+              <p class="review-content">
+                I was skeptical at first, but the contour really does support
+                your neck and shoulders perfectly. I’ve noticed way less
+                stiffness in the mornings. Couldn’t ask for more.
+              </p>
+            </div>
+
+            <div class="review">
+              <div class="review-header">
+                <h3>100% Legit & Absolutely Thrilled!</h3>
+                <div class="star-rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+
+              <div class="review-meta">
+                <span class="reviewer">Maya T.</span>
+                <span class="verified-badge">Verified Purchase</span>
+                <span class="separator">•</span>
+                <span class="date">March 15, 2023</span>
+              </div>
+
+              <p class="review-content">
+                This pillow has completely changed the way I sleep. No more
+                tossing around or waking up sore. It’s supportive, super
+                comfortable, and I honestly can’t imagine going back to a
+                regular pillow.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer>
       <div class="container">
         <div class="footer">
@@ -327,6 +471,14 @@
         </div>
       </div>
     </footer>
+
+    <!-- Notifications -->
+    <div id="toast" class="toast">
+      <i class="fas fa-check-circle"></i>
+      <span class="toast-msg"
+        >Order has been placed. Redirecting to checkout...</span
+      >
+    </div>
 
     <!-- Modal -->
     <div
